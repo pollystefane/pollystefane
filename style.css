@@ -108,7 +108,7 @@ section{
     min-height: 100vh;
     color: white;
     display: flex;
-    gap: 15em;
+    gap: 5em;
     align-items: center;
     justify-content: center;
 }
