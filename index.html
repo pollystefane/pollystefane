@@ -11,23 +11,27 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><span>Pol</span>ly.</a>
+        <a href="#" class="logo"><span>Polly.</span></a>
 
         <nav class="navbar">
-            <a href="#" class="active">Portfolio</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="https://github.com/pollystefane" target="_blank">GitHub</a>
             <a href="https://linkedin.com/in/pollyanna-stefane" target="_blank">LinkedIn</a>
             <!-- <a href="#">CV</a> -->
         </nav>
 
-        <a href="#" class="contact">Contact Me</a>
+        
+        <i class='bx bx-menu-alt-right' id="menu"></i>
+
+        <a href="#contact" class="contact">Contact Me</a>
     </header>
 
-    <section class="home">
+    <section id="home">
         <div class="home-content">
-            <h3>Hi</h3>
+            <h3><span>Hello,</span><i class="fa-regular fa-handshake"></i></h3>
 
-            <h1>I'm <span>Pollyanna Stefane<br></span>a Frontend Developer</h1>
+            <h1>I'm <span>Pollyanna Stefane<br></span> a Frontend Developer</h1>
 
             <p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur.</p>
         
@@ -38,32 +42,85 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about">
+
         <div class="about-img">
             <img src="./assets/result_profile-pic.jpeg" alt="">
         </div>
+
         <div class="about-content">
-            <h2 class="heading">About<span>Me</span></h2>
-            <h3>Frontend<span>Developer</span></h3>
+            <h1 class="heading"><span>About Me</span></h1>
+            <h3><span>Frontend Developer</span></h3>
             <p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+        <!-- <h2><span>Skills</span></h2>
+
+        <div class="skills">
+            <ul>
+                <li>
+                    <span><i class='bx bxs-chevron-right'></i> HTML</span>
+                </li>
+
+                <li>
+                    <span>CSS</span>
+                </li>
+
+                <li>
+                    <span>JavaScript</span>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <span>HTML</span>
+                </li>
+
+                <li>
+                    <span><i class='bx bxs-chevron-right'></i> CSS</span>
+                </li>
+
+                <li>
+                    <span>JavaScript</span>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <span>HTML</span>
+                </li>
+
+                <li>
+                    <span>CSS</span>
+                </li>
+
+                <li>
+                    <span><i class='bx bxs-chevron-right'></i> JavaScript</span>
+                </li>
+            </ul> -->
         </div>
     </section>
 
-    <section class="contact-form">
-        <h2 class="contact-me">Contact<span>Me</span></h2>
+    <section id="contact-form">
+
+        <h2 class="contact-me"><span>ContactMe</span></h2>
 
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="E-mail">
+                <span>Full Name</span>
+                <input type="text" placeholder="Enter Your Full Name">
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Subject">
+                <span>Your Email</span>
+                <input type="email" placeholder="Enter Your Email">
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="input-box">
+                <span>Your Message</span>
+                <input type="text" placeholder="Enter Your Message">
+            </div>
+
             <input type="submit" value="Send Message" class="btn-1">
 
         </form>
@@ -71,8 +128,10 @@
     </section>
 
     <footer class="footer">
-        <p class="copyright">© 2024 Polly Stefane | All Rights Reserved</p>
+        <p class="copyright"><span>© 2024 Polly Stefane | All Rights Reserved</span></p>
     </footer>
     
+
+    <script src="script.js"></script>
 </body>
 </html>
