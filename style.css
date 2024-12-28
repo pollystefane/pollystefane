@@ -24,13 +24,19 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1em 15%;
+    padding: 1rem 1rem;
     background-color:  rgba(15, 15, 15, 0.8);
     backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.container-header{
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
 }
 
 
@@ -98,13 +104,6 @@ span{
     display: none;
 }
 
-section{
-    min-height: 100vh;
-    /* padding-top: 10%;
-    padding-bottom: 10%; */
-    /* padding: 5% 15%; */
-}
-
 #home{
     width: 100%;
     min-height: 100vh;
@@ -113,6 +112,7 @@ section{
     gap: 5em;
     align-items: center;
     justify-content: center;
+    padding: 8rem 1rem;
 
 }
 
@@ -123,7 +123,6 @@ section{
     max-width: 600px;
     opacity: 0.8;
     gap: 2em;
-    padding-left: 5vh;
     }
 
 .home-content h3{
@@ -167,6 +166,7 @@ section{
     align-items: center;
     gap: 5em;
     background-color: var(--second-background);
+    padding: 8rem 1rem;
 }
 
 .about-img img{
@@ -179,10 +179,9 @@ section{
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 2em;
+    gap: 1em;
     max-width: 600px;
     opacity: 0.8;
-    padding-right: 5vh;
    
 }
 
@@ -198,7 +197,7 @@ section{
     color: white;
     opacity: 0.8;
     font-size: 20px;
-    margin: 2em 0 3em;
+    margin: 1rem 0 0;
 }
 /* 
 #about h2{
@@ -240,6 +239,10 @@ section{
 
 #contact-form{
     background-color: var(--second-background);
+    padding: 8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 #contact-form h2{
@@ -247,7 +250,6 @@ section{
     align-items: center;
     justify-content: center;
     font-size: 60px;
-    padding: 8% 0 3% 0;
 }
 
 form{
@@ -255,7 +257,7 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
 }
 
 form .input-box{
@@ -322,9 +324,6 @@ form input:focus{
 }
 
 @media(max-width:1024px){
-    section{
-        padding: 8em 15%;
-    }
     header .contact{
         display: none;
     }
@@ -355,7 +354,7 @@ form input:focus{
     }
 
     #home{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #home h3{
         font-size: 3em;
@@ -372,14 +371,14 @@ form input:focus{
         margin-bottom: 0;
     }
     #home img{
-        width: 24vh;
+        width: 230px;
     }
 
     #about{
         flex-direction: column;
     }
     #about img{
-        width: 32vh;
+        width: 230px;
     }
     #about h1{
         font-size: 3em;
@@ -399,9 +398,6 @@ form input:focus{
 }
 
 @media(max-width:640px){
-    section{
-        padding: 8em 10% 0 0;
-    }
     #home{
         display: flex;
     }
@@ -421,7 +417,7 @@ form input:focus{
         margin: 0 0 0 0;
     }
     #home img{
-        width: 280px;
+        width: 230px;
     }
 
     #contact-form .contact-me{
